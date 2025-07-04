@@ -227,7 +227,7 @@ body {
   background: whitesmoke;
   color: var(--stratos);
   position: absolute;
-  top: 70%; left: 50%;
+  top: 76%; left: 50%;
   transform: translate(-50%,-50%);
   opacity: 1;
   transition: opacity 1s ease;
