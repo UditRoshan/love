@@ -96,13 +96,13 @@ let counter = { val: 0 };
    });
 
   const photos = [
-    "images/HerEyes.png",
-    "images/HerSmile.png",
-    "images/HerVoice.png",
-    "images/HerHeart.png",
-    "images/HerLaugh.png",
-    "images/HerMind.png",
-    "images/HerPresence.png",
+    "HerEyes.png",
+    "HerSmile.png",
+    "HerVoice.png",
+    "HerHeart.png",
+    "HerLaugh.png",
+    "HerMind.png",
+    "HerPresence.png",
   ];
 
   const poems = [
