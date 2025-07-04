@@ -213,7 +213,7 @@ body {
 #section1 #photo {
   width: 110%;
   position: absolute;
-  top: 40%; left: 50%;
+  top: 46%; left: 50%;
   transform: translate(-50%,-50%);
   opacity: 1;
   transition: opacity 1s ease;
