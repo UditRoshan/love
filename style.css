@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Righteous&family=Savate:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Righteous", sans-serif;
+  font-optical-sizing: auto;
+  overflow-x: hidden;
+}
+
+:root {
+  --stratos: #011936;
+  --strawberry: #ED254E;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+}
+
+.landing {
+  height: 100vh;
+  width: 100vw;
+  background: var(--stratos);
+  position: relative;
+  overflow-x: hidden;
+}
+
+.landing h1 {
+  color: var(--strawberry);
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4rem;
+  position: absolute;
+  top: 42%; left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 4;
+  opacity: 0;
+  animation: appear 1s ease-in 1s forwards;
+}
+
+.landing h2 {
+  color: var(--strawberry);
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 8.7rem;
+  position: absolute;
+  top: 48%; left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 4;
+  opacity: 0;
+  animation: appear 1s ease-in 2s forwards;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.landing i.i1 {
+  color: #42445A8C;
+  font-size: 40rem;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  animation: main-heart 1s ease-in forwards;
+  z-index: 3;
+}
+
+@keyframes main-heart {
+  0% {
+    font-size: 0rem;
+  }
+  90% {
+    font-size: 55rem;
+  }
+  100% {
+    font-size: 50rem;
+  }
+}
+
+.floating-hearts {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.floating-hearts .heart {
+  position: absolute;
+  color: #ff4d6d;
+  font-size: 20px;
+  opacity: 0;
+  animation: popHeart 2s ease-out forwards;
+  z-index: 100;
+}
+
+@keyframes popHeart {
+  0% {
+    transform: translateY(0) scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-10px) scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-20px) scale(1);
+    opacity: 0;
+  }
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0%; left: 0%;
+  background: linear-gradient(var(--stratos), #42445A00, var(--stratos));
+  z-index: 3;
+}
+
+.section#countdown h1#counter {
+  color: var(--strawberry);
+  width: 100%;
+  text-align: center;
+  font-size: 20rem;
+  position: absolute;
+  top: 35%; left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 4;
+}
+
+.section#countdown h2 {
+  color: var(--strawberry);
+  font-size: 1.5rem;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 45%; left: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0;
+  z-index: 4;
+}
+
+.appear {
+  animation: counterh2Appear 1s ease-in forwards;
+}
+
+@keyframes counterh2Appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.section#countdown img.flower1 {
+  position: absolute;
+  top: 50%; left: 40%;
+  height: 80%;
+  z-index: 2;
+  opacity: 1;
+}
+
+.section#countdown img.flower2 {
+  position: absolute;
+  top: 70%; left: -10%;
+  height: 50%;
+  z-index: 2;
+  opacity: 1;
+}
+
+.section {
+  height: 100vh;
+  width: 100vw ;
+  background: var(--stratos);
+  position: relative;
+  z-index: 1;
+  overflow-y: hidden;
+}
+
+#section1 h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  line-height: 40px;
+  text-align: center;
+  width: 100%;
+  padding: 4rem 2rem 2rem 2rem;
+  color: whitesmoke;
+}
+
+#section1 h1 span {
+  color: var(--strawberry);
+  font-style: italic;
+}
+
+#section1 #photo {
+  width: 110%;
+  position: absolute;
+  top: 45%; left: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+#section1 #poem {
+  text-align: center;
+  line-height: 20px;
+  width: 70%; padding: 2rem;
+  font-size: 1.5rem;
+  background: whitesmoke;
+  color: var(--stratos);
+  position: absolute;
+  top: 75%; left: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+#section1 #btns {
+  height: 50px;
+  width: 300px;
+  position: absolute;
+  top: 90%; left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#btns button {
+  border: none;
+  background: transparent;
+}
+
+#btns button i {
+  color: var(--strawberry);
+  font-size: 4rem;
+}
+
+.fade {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+#message {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+
+#message img {
+   position: absolute;
+   top: 20%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   border: none;
+   background: transparent;
+   height: 20rem;
+}
+
+#message p {
+   padding: 20rem 4rem 4rem 4rem;
+   font-size: 1.5rem;
+   color: var(--strawberry);
+   text-align: justify;
+}
+
+#message p span {
+   display: block;
+   text-transform: uppercase;
+   font-size: 4rem;
+   padding-top: 2rem;
+}
+
