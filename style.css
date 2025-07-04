@@ -213,7 +213,7 @@ body {
 #section1 #photo {
   width: 110%;
   position: absolute;
-  top: 30%; left: 50%;
+  top: 45%; left: 50%;
   transform: translate(-50%,-50%);
   opacity: 1;
   transition: opacity 1s ease;
@@ -222,7 +222,7 @@ body {
 #section1 #poem {
   text-align: center;
   line-height: 20px;
-  width: 70%; padding: 2rem;
+  width: 75%; padding: 2rem;
   font-size: 1.5rem;
   background: whitesmoke;
   color: var(--stratos);
@@ -237,7 +237,7 @@ body {
   height: 50px;
   width: 300px;
   position: absolute;
-  top: 85%; left: 50%;
+  top: 90%; left: 50%;
   transform: translate(-50%,-50%);
   display: flex;
   justify-content: space-between;
